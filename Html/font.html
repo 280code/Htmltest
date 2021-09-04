@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/selector.css">
+    <style>
+       /* 这是一个css规则*/
+       
+        .tabaoh{
+            color: #000;
+            background-color: #f40;
+        }
+        .hui{
+           color: #000;
+            background-color: #CCC;
+        }
+        .ma{
+            color: #000;
+            background-color:#008c8c;
+        }
+        .em{
+            font-size: 1em;
+        }
+        .height{
+            height:5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello,a test</h1>
+    <h1>颜色</h1>
+    <div class="tabaoh">淘宝红：f40</div>
+    <div class="hui">浅灰色：ccc</div>
+    <div class="ma">马尔斯绿：008c8c </div>
+
+    <h2>文字大小</h2>
+    <div class="em">em:相对于父元素的值，此时的父元素为body，body字体大小继承自htnl，html没有声明字体大小，
+        则使用基准字号。基准字号在浏览器中设置，默认为14px，16px左右
+    </div>
+    <h4 style="height:5px;">字体粗细设置</h4>
+    <div style="font-weight:normal;">不加粗</div>
+    <div style="font-weight:bold;">加粗</div>
+
+    <h4 class="height" style="font-family:consolas">consolas</h4>
+    <h4 class="height" style="font-family:arial">arial</h4>
+    <h4 class="height" style="font-family:sans-serif">非衬线字体</h4>
+    <h4 class="height" style="font-style:italic">font-style:italic</h4>
+    <i>特殊文本（行内元素）</i>
+    <i style="font-style:normal">不倾斜的特殊字体</i>
+    <br>
+    <strong>表示重要的不能忽略的内容</strong>
+    <br>
+    <em>表示需要强调的内容，比如备忘录</em>
+    <div style="text-decoration:line-through;">text-decoration:line-through</div>
+    <a href="" style="text-decoration:none">text-decoration:none 无下划线超链接 </a>
+    <br>
+    <del>del：语义为错误的文字</del>
+    <br>
+    s:语义为过期的元素，如：
+   &lt;s&gt; <s>爱情</s>&lt;/s&gt;
+   <h4 class="height">首行缩进</h4>
+   <p style="text-indent:2em;">首航缩进两个字符</p>
+   <h4 class="height">用行高设置一个重合字符</h4>
+   <span style="line-height:2px;font-size:35px">帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅</span>
+   <h4 class="height">字体间距</h4>
+   <h5 style="letter-spacing:5px;">letter-spacing:5px</h5>
+   <h3 style="letter-spacing:2em;">为了爱与和平</h3>
+
+   <div id="selector">
+     <h5>属性选择器</h5>
+   <p>
+       [href]{
+
+       }
+   </p>
+   </div>
+   <a href="">a元素</a>
+</body>
+</html>

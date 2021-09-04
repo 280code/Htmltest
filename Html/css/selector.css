@@ -1,0 +1,49 @@
+
+a:link{
+    /*链接未访问状态*/
+    color:orange;
+}
+a:visited{
+    /*链接访问后状态*/
+    color:rgb(48, 33, 23);
+}
+a:hover{
+    /*鼠标悬停状态*/
+    color:greenyellow;
+}
+h5:active{
+    color:red;
+}
+p:active{
+    color:green;
+}
+h1,span,h3{
+    background:greenyellow;
+    color:black;
+}
+.light{
+    background:greenyellow;
+    color:black;
+}
+.act{
+    color:white;
+    font-style:italic;
+    background-color: red;
+    font-size:3em;
+    text-align:center;
+    line-height: 3;
+    -webkit-text-stroke:thick;
+    -webkit-text-emphasis-style: double-circle;
+    
+}
+.suprem{
+    color:white;
+    background-color: red;
+    font-style:italic;
+    font-size:3em;
+    width:190px !important;
+   
+}
+.center{
+    text-align:center;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="counter">
+        <h1>counter:{{num}}</h1>
+    </div>
+    ctrl+d 能够依次选中相同的字符
+    ctrl+回车 下方新增一行
+    ctrl+shift+回车 上方新增一行
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    h$*3>{$级别标题}乱数假文lorem
+    p*5>lorem
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur voluptatem itaque nemo praesentium eveniet incidunt soluta molestias consequuntur, sed rem dolore repudiandae. Ipsum fugit voluptatem dignissimos praesentium tenetur illo eaque.</p>
+    <p>Culpa mollitia aspernatur veniam eos sequi nemo facilis nisi? Inventore, adipisci aspernatur fuga minima tempora qui minus earum illum, magni, expedita aperiam omnis odio? Et similique consectetur aliquam ratione unde!</p>
+    <p>Aspernatur dolorem tenetur odio sapiente, earum fugiat totam vitae, consectetur esse aperiam nobis magni laborum! Saepe fuga esse est veniam iusto ullam. Repellendus dolor accusamus omnis, voluptate odio eius numquam!</p>
+    <p>Placeat voluptatem in modi labore ipsum consectetur repellat nobis, aut doloribus voluptas fugiat saepe facere odio ex expedita, accusamus id distinctio error molestias recusandae dolore. Neque reiciendis eveniet soluta dolore.</p>
+    <p>Officia magnam fugit, perspiciatis accusamus eveniet animi ipsa rerum voluptatem repudiandae tenetur adipisci vero enim, voluptas laudantium asperiores? Sequi consequuntur odio officia. Perspiciatis eveniet quae sit explicabo expedita? Ducimus, nam?</p>
+    
+    Tab+shift 删除缩进
+
+    行盒显示
+    display:inline
+    <h1 style="display:inline;">nihao</h1>  <button>try</button>
+    
+    <pre>
+        pre元素不会有空白折叠
+        ffd
+        fdf
+
+        fdf
+    </pre>
+    <h5 style="white-space: pre;">
+        white-sapce:pre;
+        取消空白折叠样式
+    </h5>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const Counter={
+            data:function(){
+                return{
+                    num:0
+                }
+            }
+        }
+        let app = Vue.createApp(Counter).mount("#counter")
+    </script>
+</body>
+</html>

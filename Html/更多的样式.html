@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        div.box{
+            width:80px;
+            height:80px;
+            background-color: #008c8c;
+            
+        }
+        .opacity{
+            opacity:0.3;
+        }
+        .rgba{
+            border:3px solid black;
+            border-color: rgba(0,0,0,.3);
+            background-clip: padding-box;
+        }
+/*         使同一知识点的内容横向排列
+ */     
+        .item{
+            float:left;
+            margin:0 20px; 
+        }
+        
+/*         隐藏内容
+ */ 
+        .displayn{
+            display:none
+        }
+        .hidden .item:hover .displayn{
+            display:block;
+
+        }
+        .visibility{
+            visibility:hidden;
+        }
+        .hidden .item:hover .visibility{
+            visibility:visible;
+        }
+
+/*         背景图
+ */ 
+        .background{
+            width:1000px;
+            height:600px;
+            background-image: url('./img/fightClub01.jpeg');
+            background-size: contain;
+            border:3px solid black;
+        }
+        .repeat{
+            background-repeat: no-repeat;
+        }
+        .size-cover{
+            background-size:cover;
+/*          background-size: 100% 100%;
+ */        }
+        .small{
+            background-size: 400px 200px;
+        }
+
+        body{
+            background:url('./img/fightClub04.jpeg') no-repeat center/100% black fixed;
+            color:white;
+            padding:0 20px;
+        }
+ </style>
+</head>
+<body>
+    <h2>透明度</h2></h2></h2>
+    <div class="container clearfix">
+        <div class="item">
+            <h4>opacity</h4>
+            <div class="box opacity"></div>
+        </div>
+        <div class="item">
+            <h4>rgba</h4>
+            <div class="box rgba"></div>
+
+        </div>
+    </div>
+
+    
+    <h2>盒子隐藏</h2>
+    <div class="container clearfix hidden">
+        <div class="item">
+             <h4>display:none</h4>
+            <div class="box displayn"></div>
+            <div class="box">lorem</div>
+        </div>
+        <div class="item">
+            <h4>visibility:hidden</h4>
+            <div class="box visibility"></div>
+            <div class="box">lorem</div>
+        </div>
+    </div>
+
+    <h2>背景图</h2>
+    <div class="container clearfix">
+        <div class="item ">
+            <h4>background-contain：保证图片完整显示在框内</h4></h4>
+            <div class="background"></div>
+        </div>
+        <div class="item">
+            <h4>background-repeat</h4>
+            <div class="background repeat">
+            </div>
+        </div>
+        <div class="item">
+            <h4>background-size:cover:保证图片比例不变，同时撑满空间，会因此隐藏一些图片信息</h4>
+            <div class="background size-cover"></div>
+        </div>
+    </div>
+</body>
+</html>

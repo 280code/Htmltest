@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒模型的应用</title>
+    <link rel="stylesheet" href="./css/aside.css">
+</head>
+<body>
+    默认情况下，width盒height是设计的内容盒宽高<br>
+    background-clip:设置背景覆盖范围
+    <h3>overflow</h3>
+    overflow设置内容溢出后的处理结果，默认为visible，可改为<br>
+    overflow:hidden 来隐藏溢出内容<br>
+    overflow:scroll 生成滚动条<br>
+    overflow-y:scroll:只生成纵向的滚动轴<br>
+    overflow-y:auto;自判断是否需要滚动条
+    <h3>断词规则:word-break</h3>
+    取值
+    <UL>
+        <LI>
+            normal:。cjk(中日韩)字符，文字位置截断，非cjk单词位置截断；
+        </LI>
+        <li>
+            break-all:主要影响英文，使其在字母位置截断
+        </li>
+        <li>
+            keep-all:主要影响中文，中午无法截断
+        </li>
+    </UL>
+    <h3>空白处理:white-space</h3>
+    取值
+    <ul>
+        <li>
+            normal:进行空白折叠
+        </li>
+        <li>
+            nowrap:不换行，但进行空白折叠 
+        </li>
+        <li>
+            pre:保留字符原型。  
+        </li>
+    </ul>
+
+    <h1>行盒</h1>
+    <h2>行盒特性</h2>
+    <h3>盒子随着内容延申</h3>
+    <p>因此给行盒设置宽高无效，因为行盒宽高始终跟随内容。<br>
+       因此只能通过设置font-size,line-height,font-style来间接调整。
+    </p>
+    <span style="border:3px solid skyblue;line-height:2em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illo minus ullam debitis nisi incidunt similique deserunt odio rerum, cumque deleniti dignissimos impedit ipsa sit exercitationem quia doloribus accusamus assumenda.</span>
+    <h3>内边距(填充区)、边框、外边距</h3>
+    <li>水平方向有效，但垂直方向仅会影响背景，但不会占据空间。</li></li></li>
+    <h3>行块盒</h3>
+    <li>display:inline-block</li>
+   <li>不独占一行，但宽高依然有效</li>
+
+   <span>普通行盒</span>
+   <span style="display:inline-block">行块盒</span>
+   <span>普通行盒</span>
+   <h3>img</h3>
+   <li>img属于行盒，但实际效果类似于行块盒</li>
+    <h4>object-fit</h4>
+    取值
+    <li>contain:保证图片完全显示的同时保证图片不被拉伸</li>
+    <li>fill:保证完全显示图片，但是会根据宽高拉伸图片</li>
+    <li>cover:图片不会被拉伸，同时填充满宽高，但这会损失部分图片信息</li>
+    <div class="aside">侧边栏设置</div>
+    <br>
+    <br>
+    <h3>页码</h3>
+    <div class="page">
+        <a class="selected" href="">1</a><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">6</a><a href="">7</a><a href="">8</a><a href="">9</a><a href="">10</a>
+    </div>
+
+</body>
+</html>

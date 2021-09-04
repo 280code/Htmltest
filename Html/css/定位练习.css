@@ -1,0 +1,242 @@
+body{
+    line-height:1.5em;
+    font-size:16px;
+}
+p{
+    text-indent: 2em;
+    margin:20px 10px;
+    font-size:20px;
+}
+.oli{
+    width:220px;;
+    height:200px;
+    position:fixed;
+    right:0px;
+    top:0px;
+    bottom:0;
+    margin:auto;
+    z-index:-1;
+}
+.item{
+    width:70px;
+    height:70px;
+    box-sizing:border-box;
+    border-radius: 50%;
+    border:5px solid black;
+    position:absolute;
+}
+.circle1{
+    left:0px;
+    top:0px;
+    border-color: blue;
+}
+.circle2{
+    left:70px;
+    top:0px;
+    border-color: black;
+}
+.circle3{
+    left:140px;
+    top:0px;
+    border-color: red;
+}
+.circle4{
+    left:35px;
+    top:40px;
+    border-color: yellow;
+}
+.circle5{
+    left:105px;
+    top:40px;
+    border-color: green;
+}
+
+/* 导航栏 */
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: #e3e4e5;
+    color:#999;
+    height:35px;
+    box-sizing: border-box;
+    z-index:4;
+}
+.nav>.topnav>li{
+    float:left;
+    position:relative;
+    width:120px;
+    text-align:center;
+    box-sizing: border-box;
+    line-height: 35px;
+}
+.nav>.topnav>li:hover{
+    background-color: #fff;
+    border:1px solid #ccc;
+    line-height: 33px;
+    padding-bottom: 1px;
+    border-bottom: springgreen;
+}
+.nav>.topnav>li:hover::after{
+    content:"";
+    display:block;
+    position:absolute;
+    height:2px;
+    left:0px;
+    right:0px;
+    bottom:-1px;
+    width:auto;
+    background-color: #fff;
+
+}
+.nav>.topnav>li>.submenu{
+    width:200px;
+    position:absolute;
+    background-color: #fff;
+    top:34px;
+    right:-1px;
+    border:1px solid #ccc;
+    display: none;
+    text-align: left;
+}
+.nav>.topnav>li:hover .submenu{
+    display:block;
+}
+
+/* model */
+.nav>.topnav>li:hover .submenu .model:active{
+    color:#666;
+}
+.nav>.topnav>li:hover .submenu .model .container{
+    display: none;
+}
+.nav>.topnav>li:hover .submenu .model:active .container{
+    content:"";
+    position:fixed;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,.2);
+    z-index:10;
+    display: block;
+}
+.nav>.topnav>li:hover .submenu .model:active .container .main{
+    position:absolute;
+    left:0;
+    right: 0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:300px;
+    height:400px;
+    background-color: white;
+}
+.nav>.topnav>li:hover .submenu .model:active .container .main .disolve{
+    position:absolute;
+    width:30px;
+    height:30px;
+    top:-15px;
+    right:-15PX;
+    background-color: red;
+    color:white;
+    text-align: center;
+    line-height: 30px;
+    border-radius:50%;
+    border:1px solid white;
+}
+/* 关闭黑屏 */
+ .nav>.topnav>li:hover .submenu .modeloff:active{
+     color:red;
+ }
+/*  轮播图
+ */
+ .banner{
+     width:560px;
+     height:330px;
+     margin: auto;
+     margin-top:60px;
+     box-sizing: border-box;
+     overflow: hidden;
+     position:relative;
+     z-index:2 ;
+ }
+ .banner .imgs{
+     width:1680px;
+ }
+ .banner .imgs img{
+     width:560px;
+     height:350px;
+ }
+ .banner .imgs li a img{
+     float:left;
+ }
+/*  轮播图的箭头
+ */
+.banner .arrows .left,
+.banner .arrows .right{
+    height:30px;
+    width:30px;
+    top:0px;
+    bottom:0;
+    margin:auto;
+    text-align:center;
+    line-height: 30px;
+    position:absolute;
+    color: white;
+}
+.banner .arrows .left:hover,
+.banner .arrows .right:hover{
+    background-color: white;
+    color:tomato;
+    border-radius:50%;
+}
+
+.banner .arrows .left{
+    left:10px;
+}
+.banner .arrows .right{
+    right:10px;
+}
+
+/* 轮播图下边部分
+ */
+.banner .bottom{
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    height:30px;
+    background-color: rgba(0,0,0,.2);
+    color:white;
+    padding:0 10px;
+    box-sizing: border-box; 
+}
+.banner .titile{
+    float:left;
+
+}
+.banner .bottom .dots{
+    float:right;
+}
+.banner .bottom .dots li{
+    display: inline-block;
+    height:8px;
+    width:8px;
+    border-radius: 50%;
+    margin:0 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+ 
+ /*  主要内容 */
+
+.main{
+    margin-top:30px;
+}

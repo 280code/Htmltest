@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100%;
+        }
+        .clearfix::after{
+            content:'';
+            display: block;
+            clear:both;
+        }
+        .item{
+            float:left;
+            padding:0 10px;
+            border-right: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="item">
+            <h4>type:date</h4>
+            <input type="date" name="" id="">
+        </div>  
+        <div class="item">
+            <h4>type:search,手机访问时换行键改为搜索(有兼问)</h4>
+            <input type="search">
+        </div>      
+        <div class="item">
+            <h4>type:range</h4>
+            <input type="range" min="0" max="5" name="" id="">
+        </div>
+        <div class="item">
+            <h4>type:color</h4>
+            <input type="color" name="" id="">
+        </div>
+        <div class="item">
+            <h4>type:number</h4>
+            <input type="number" min="0" max="10" step="2" name="" id="">
+        </div>
+        <div class="item">
+            <h4>type:checkbox</h4>
+            <input type="checkbox" name="" id="">
+        </div>
+        <div class="item">
+            <h4>type:radio</h4>
+            <input type="radio" name="gender" id="">\
+            <input type="radio" name="gender" id="">
+        </div>
+    </div>
+
+
+</body>
+</html>

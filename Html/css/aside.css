@@ -1,0 +1,49 @@
+.aside{
+    width:236px;
+    height:51px;
+    color:#a7a7a7;
+    background-color: #2d2e36;
+    line-height: 51px;
+    padding-left:46px;
+    border:3px solid red;
+    box-sizing: border-box;
+
+
+}
+li{
+    border-bottom:1px dashed #ccc;
+    line-height:2;
+    border-left:3px solid #008c8c;
+    padding-left:10px;
+    margin:1em 0;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+}
+span{
+    width:90px;
+    height:30px;
+    line-height: 30px;
+    text-align:center;
+    background-color: yellow;
+}
+.page a{
+    border:1px solid #e1e2e3;
+    text-decoration:none;
+    color:#38f;
+    width:34px;
+    height:34px;
+    display:inline-block;
+    text-align:center;
+    line-height:34px;
+}
+.page a:hover{
+    border-color:#38f;
+    background:#f2f8ff;
+    
+}
+.page a.selected{
+    border:none;
+    color:#000;
+    background:initial;
+}
