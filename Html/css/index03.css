@@ -76,6 +76,7 @@
 .container .main .safety .factor .left .title{
     width:80px;
     float: left;
+    font-weight: bold;
 
 }
 .container .main .safety .factor .left .icon{
@@ -83,11 +84,10 @@
 }
 .container .main .safety .factor .left li{
     float:left;
-    line-height: 20px;
     width:30px;
     height:5px;
     border-radius: 5px;
-    margin:5px;
+    margin:6px;
     
 }
 /* 安全系数图标 */
@@ -189,9 +189,40 @@ button:hover{
 .container .main .protocol{
     font-size: 12px;
     margin:-30px 0 10px 0;
+    text-align: left;
+}
+/* 设置单选框 */
+.container .main .protocol .checkbox{
+    display: inline-block;
+    width:14px;
+    height:14px;
+    box-sizing: border-box;
+    border:1.5px solid #dcdfe6;
+    border-radius: 2px;
+    padding-top:2px;
+    position:relative;
+    top:2px;
+    
+}
+.container .main .protocol label input{
+    display: none;
+}
+.container .main .protocol label input:checked+.checkbox{
+    border-color: #00a1d6;
+}
+.container .main .protocol label input:checked+.checkbox::after{
+    content: "";
+    width:7px;
+    height:7px;
+    border-radius: 2px;
+    display: block;
+    background-color: #00a1d6;
+    margin:auto;
+    
 }
 .container .main a{
     color:#00a1d6;
+    
 }
 button.fill{
     width:100%;
