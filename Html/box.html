@@ -5,53 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒模型</title>
-    <link rel="stylesheet" href="./css/selector.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .container{
+            width:800px;
+            margin:auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>盒模型</h1>
-    <h4>盒子的组成内容</h4>
-    <ul>
-        <li>内容 content<br>
-        weight,height:设置的都是盒子内容的宽高<br>
-        内容区叫做内容盒 content-box</li>
-        <li>填充 padding<vr>
-            盒子边框到盒子内容的距离<br>
-            padding默认为0<br>
-            padding:上 右 下 左<br>
-            填充区+内容区 = 填充盒 padding-box
-        </vr></li>
-        <li>边框 border<br>
-        边框=边框样式 + 边框宽度 + 边框颜色<br>
-        border=border-style + border-width + border-color<br>
-        默认值 border-width:0; border-style:none;border-color:字体颜色<br>
-        border-style: solid(实线) dashed(虚线) 
-        boder速写->border:宽度 样式 颜色;<br>
-        边框+填充+内容=边框盒 border-box
-        </li>
-        <li>外边距 margin<br>
-        </li>
-    </ul>
-    <h4>行盒</h4>
-    <ul>
-        <li>
-            display等于line的元素，line是元素的默认值，
-            即如果没有设置display值，而浏览器也没有设置代理属性，
-            则是line
-        </li>   
-        <li>
-            浏览器设置为行盒的元素：a,span,img,video,audio
-        </li>
-        <li>
-        </li>
-        
-    </ul>
-    <h4>块盒</h4>   
-    <ul>
-        <li>
-            display等于block的属性
-        </li>
-        <li>浏览器设置为块盒的元素:容器元素，h1-h6,p</li>
-    </ul>
+    <div class="container">
+        <h1>盒模型</h1>
+        <h4>盒子的组成内容</h4>
+        <ul>
+            <li>内容 content<br>
+            weight,height:设置的都是盒子内容的宽高<br>
+            内容区叫做内容盒 content-box</li>
+            <li>填充 padding<vr>
+                盒子边框到盒子内容的距离<br>
+                padding默认为0<br>
+                padding:上 右 下 左<br>
+                填充区+内容区 = 填充盒 padding-box
+            </vr></li>
+            <li>边框 border<br>
+            边框=边框样式 + 边框宽度 + 边框颜色<br>
+            border=border-style + border-width + border-color<br>
+            默认值 border-width:0; border-style:none;border-color:字体颜色<br>
+            border-style: solid(实线) dashed(虚线) 
+            boder速写->border:宽度 样式 颜色;<br>
+            边框+填充+内容=边框盒 border-box
+            </li>
+            <li>外边距 margin<br>
+            </li>
+        </ul>
+        <h4>行盒</h4>
+        <ul>
+            <li>
+                display等于line的元素，line是元素的默认值，
+                即如果没有设置display值，而浏览器也没有设置代理属性，
+                则是line
+            </li>   
+            <li>
+                浏览器设置为行盒的元素：a,span,img,video,audio
+            </li>
+
+            
+        </ul>
+        <h4>块盒</h4>   
+        <ul>
+            <li>
+                display等于block的属性
+            </li>
+            <li>浏览器设置为块盒的元素:容器元素，h1-h6,p</li>
+        </ul>
+    </div>
+    
 </body>
 </html>
