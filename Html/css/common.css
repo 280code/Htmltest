@@ -3,3 +3,9 @@
     display:block;
     clear:both;
 }
+.list{
+    border-left: 3px solid #008c8c;
+    border-bottom: 1px dashed #ccc;
+    padding:10px;
+    margin:10px 0;
+}
