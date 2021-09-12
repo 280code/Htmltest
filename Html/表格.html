@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+    <style>
+        table{
+            width:800px;
+            height:100%;
+            margin:auto;
+            border-collapse: collapse;
+        }
+        table caption{
+            margin:1.5em 0;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        table th,table td{
+            border:1px solid #999;
+            text-align: center;
+            line-height: 3em;
+        }
+        tbody tr:nth-child(odd){
+            background-color: #eee;
+        }
+        table th{
+            background-color: #008c8c;
+            color:white;
+        }
+        tbody tr:hover{
+            background-color: #ccc;
+        }
+        tbody td:first-child{
+            color:tomato;
+        }
+        tfoot td{
+            text-align: right;
+           padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>这是一个表格</caption>
+        <thead>
+            <tr>
+                <th>标题1</th>
+                <th>标题2</th>
+                <th>标题3</th>
+                <th>标题4</th>
+                <th>标题5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>数据1</td>
+                <td>数据2</td>
+                <td>数据3</td>
+                <td>数据4</td>
+                <td>数据5</td>
+            </tr>
+            <tr>
+                <td>数据1</td>
+                <td>数据2</td>
+                <td>数据3</td>
+                <td>数据4</td>
+                <td>数据5</td>
+            </tr>
+            <tr>
+                <td>数据1</td>
+                <td>数据2</td>
+                <td>数据3</td>
+                <td>数据4</td>
+                <td>数据5</td>
+            </tr>
+            <tr>
+                <td>数据1</td>
+                <td>数据2</td>
+                <td>数据3</td>
+                <td>数据4</td>
+                <td>数据5</td>
+            </tr>
+            <tr>
+                <td>数据1</td>
+                <td>数据2</td>
+                <td>数据3</td>
+                <td>数据4</td>
+                <td>数据5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="5">合计：XXX</td>
+        </tfoot>
+    </table>
+</body>
+</html>
