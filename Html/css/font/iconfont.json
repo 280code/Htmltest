@@ -1,0 +1,16 @@
+{
+  "id": "2807002",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7831434",
+      "name": "工具",
+      "font_class": "gongju",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    }
+  ]
+}

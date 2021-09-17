@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2815579_b5f8wyqvg1o.css">
+    <link rel="stylesheet" href="./css/font/iconfont.css">
+    <style>
+        @font-face {
+            font-family: "HYSW";
+            src: url('./font/HYShangWeiShouShuW.ttf');
+        }
+        .container{
+            width:800px;
+            margin:auto;
+        }
+        .container-web .content{
+            font-family: "HYSW";
+        }
+        .container>*::after{
+            content:"";
+            height:1px;
+            width:100%;
+            display: block;
+            border-bottom: 1px solid #ccc;
+        }
+        .blue{
+            color:cornflowerblue
+        }
+        .pink{
+            color:pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-web">
+            <h6>web字体,会临时下载字体文件，等到浏览器关闭，就会自动删除，缺点是会影响加载速度。 </h6>
+            <div class="content">
+                魏巍汉仪手书
+            </div>
+        </div>
+        <div class="container-webfont">
+            <h6>网络字体图标</h6>
+            <i class="iconfont icon-yonghu blue"></i> hello
+            <i class="iconfont icon-yonghu pink"></i>
+        </div>
+        <div class="container-licalicon">
+            <h6>本地字体图标</h6>
+            <i class="iconfont-local icon-gongju blue"></i> hello
+            <i class="iconfont-local icon-gongju pink"></i>
+        </div>
+    </div>
+
+</body>
+</html>

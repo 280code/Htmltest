@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2807002 */
+  src: url('iconfont.woff2?t=1631707057865') format('woff2'),
+       url('iconfont.woff?t=1631707057865') format('woff'),
+       url('iconfont.ttf?t=1631707057865') format('truetype');
+}
+
+.iconfont-local {
+  font-family: "iconfont" !important;
+  font-size: 24px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gongju:before {
+  content: "\e625";
+}
+
