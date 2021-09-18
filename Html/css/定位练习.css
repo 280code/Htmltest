@@ -15,7 +15,8 @@ p{
     top:0px;
     bottom:0;
     margin:auto;
-    z-index:-1;
+    z-index:2;
+    opacity: 70%;
 }
 .item{
     width:70px;
@@ -164,7 +165,7 @@ p{
      box-sizing: border-box;
      overflow: hidden;
      position:relative;
-     z-index:2 ;
+     z-index:0 ;
  }
  .banner .imgs{
      width:1680px;
